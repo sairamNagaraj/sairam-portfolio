@@ -1,0 +1,103 @@
+body {
+    margin: 30px 60px 30px 60px;
+    background-color: #2e3647;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+p {
+    margin: 15px 0px 15px 0px;
+}
+
+/* Classes css */
+
+.navbar {
+    font-size: 15px;
+}
+
+.logo-navbar {
+    max-width: 80px;
+    height: auto;
+}
+
+.bg-trasparent,
+.container-fluid {
+    background-color: none;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.white {
+    color: #FAEBD7;
+}
+
+.firstPage {
+    height: 100vh;
+    color: #FAEBD7;
+}
+
+.flex-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.flex-item {
+    width: 50%;
+    height: 50vh;
+
+}
+
+.hero-pic {
+    max-width: 70%;
+    height: auto;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-toggler-custom {
+    color: antiquewhite;
+}
+
+@media (max-width: 1000px) {
+    .flex-container {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left {
+        text-align: center;
+        order: 1;
+        align-items: center;
+        align-content: center;
+    }
+
+    .right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-item {
+        width: 100vw;
+        height: 50%;
+
+    }
+
+    .hero-pic {
+        max-width: 40%;
+        height: auto;
+    }
+}
+
+/* id css */
