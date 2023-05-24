@@ -1,12 +1,12 @@
 body {
-    margin: 30px 60px 30px 60px;
-    background-color: #2e3647;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+    background-color: #2e3647;
+    color: antiquewhite;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Roboto Slab', serif;
 }
 
@@ -14,10 +14,40 @@ p {
     margin: 15px 0px 15px 0px;
 }
 
+.footer-class{
+    position: fixed;
+    top: 30%;
+}
+
+.footer-class>a{
+    width: 100vw;
+    display: flex;
+}
 /* Classes css */
 
-.navbar {
-    font-size: 15px;
+
+.body-data{
+    margin: 30px 90px 30px 90px;
+}
+
+.media-icons{
+    margin: 0px 0px 20px 0px;
+    flex-basis: 50px;
+    width: 0.5%;
+    height: auto;
+}
+
+.page-splitter {
+    background-color: #2e3647;
+    border-top: antiquewhite 7px dotted;
+    height: 0px;
+    width: 15%;
+    margin: auto;
+}
+
+.fixed-top{
+    margin: 0px 90px 30px 90px;
+    padding-top: 30px;
 }
 
 .logo-navbar {
@@ -27,30 +57,61 @@ p {
 
 .bg-trasparent,
 .container-fluid {
-    background-color: none;
+    background-color: #2e3647;
     padding-left: 0%;
     padding-right: 0%;
 }
 
-.white {
-    color: #FAEBD7;
-}
-
 .firstPage {
-    height: 100vh;
-    color: #FAEBD7;
+    height: auto;
+    padding-top: 12%;
+    padding-bottom: 10%;
 }
 
-.flex-container {
+.flex-container{
     margin-top: 30px;
     display: flex;
     gap: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+.second-page, .third-page, .fourth-page{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 10% 0% 10% 0%;
+}
+
+.about-items{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+}
+
+br{
+    line-height: 60px;
+}
+
+.about-me{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 30px;
 }
 
 .flex-item {
     width: 50%;
-    height: 50vh;
 
+}
+
+.about-pic {
+    max-width: 20%;
+    height: auto;
 }
 
 .hero-pic {
@@ -67,14 +128,53 @@ p {
     color: antiquewhite;
 }
 
+.services-grid{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+}
+
+.services-grid>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 30px;
+}
+
+.services-grid p{
+    width: 80%;
+}
+
+.services-img{
+    width: 50%;
+    height: auto;
+}
+
+.api-img-service{
+    order: 1;
+}
+
+.feedback-img{
+    width: 50%;
+    height: auto;
+    margin-top: 60px;
+}
+
 @media (max-width: 1000px) {
 
-    body{
+    body,h3{
         font-size: 30px;
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 50px;
         font-family: 'Roboto Slab', serif;
     }
 
@@ -100,8 +200,6 @@ p {
 
     .flex-item {
         width: 100vw;
-        height: 50vh;
-
     }
 
     .hero-pic {
@@ -117,6 +215,7 @@ p {
     .navbar {
         font-size: 20px;
         flex-basis: 10px;
+        font-size: 30px;
     }
 
     .skill{
