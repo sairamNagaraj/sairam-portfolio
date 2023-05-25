@@ -76,7 +76,7 @@ p {
     align-items: center;
 }
 
-.second-page, .third-page, .fourth-page{
+.second-page, .third-page, .fourth-page, .fifth-page{
     height: auto;
     display: flex;
     flex-direction: column;
@@ -165,6 +165,15 @@ br{
     width: 50%;
     height: auto;
     margin-top: 60px;
+}
+
+.contact-flex{
+    margin-top: 60px;
+    width:80vw;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
 
 @media (max-width: 1000px) {
