@@ -242,10 +242,13 @@ br{
         width: 20vw;
         height: 70px;
         font-size: 30px;
+        color: antiquewhite;
+        opacity: 0.6;
         display: inline-flex;
         justify-content: center;
         align-content: center;
         flex-direction: column;
+        gap: 10px;
     }
 
     .firstPage {
