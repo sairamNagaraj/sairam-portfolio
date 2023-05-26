@@ -225,12 +225,12 @@ br{
     }
 
     .logo-navbar {
-        min-width: 100px;
+        min-width: 150px;
         height: auto;
     }
 
     .navbar {
-        flex-basis: 10px;
+        flex-basis: 30px;
         font-size: 30px;
     }
 
@@ -241,6 +241,7 @@ br{
     .skill{
         width: 20vw;
         height: 70px;
+        margin-right: 20px;
         font-size: 30px;
         color: antiquewhite;
         opacity: 0.6;
@@ -248,7 +249,6 @@ br{
         justify-content: center;
         align-content: center;
         flex-direction: column;
-        gap: 10px;
     }
 
     .firstPage {
@@ -335,6 +335,17 @@ br{
         border-top: 2px solid antiquewhite;
         border-left: none;
         opacity: 0.6;
+    }
+
+    input[type="text"], input[type="email"]{
+        height: 80px;
+        width: 80%;
+        font-size: 25px;
+    }
+    
+    .mobile-margin{
+        margin-top: 40px;
+        padding-left: 20px;
     }
 }
 
