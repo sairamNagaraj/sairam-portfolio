@@ -22,7 +22,7 @@ p {
 }
 
 .footer-class>a{
-    width: 100vw;
+    width: 5vw;
     display: flex;
 }
 /* Classes css */
@@ -182,6 +182,10 @@ br{
     border-left: 2px solid antiquewhite;
     opacity: 0.6;
     height: auto;
+}
+
+.footer-link{
+    width: 10vw;
 }
 
 @media (max-width: 1000px) {
@@ -346,6 +350,11 @@ br{
     .mobile-margin{
         margin-top: 40px;
         padding-left: 20px;
+    }
+
+    .navbar-toggler-icon{
+        width: 60px;
+        height: 60px;
     }
 }
 
