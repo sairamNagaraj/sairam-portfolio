@@ -12,6 +12,8 @@ h1 {
 
 p {
     margin: 15px 0px 15px 0px;
+    opacity: 0.6;
+    font-weight: 400;
 }
 
 .footer-class{
@@ -172,18 +174,28 @@ br{
     width:80vw;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.1fr 1fr;
     gap: 10px;
+}
+
+.contact-splitter{
+    border-left: 2px solid antiquewhite;
+    opacity: 0.6;
+    height: auto;
 }
 
 @media (max-width: 1000px) {
 
-    body,h3{
+    body{
         font-size: 30px;
     }
 
-    h1 {
+    h3,h5,h4{
         font-size: 50px;
+    }
+
+    h1 {
+        font-size: 80px;
         font-family: 'Roboto Slab', serif;
     }
 
@@ -196,6 +208,7 @@ br{
     }
 
     .left {
+        padding-top: 10%;
         text-align: center;
         order: 1;
         align-items: center;
@@ -211,19 +224,17 @@ br{
         width: 100vw;
     }
 
-    .hero-pic {
-        max-width: 100%;
-        height: auto;
-    }
-
     .logo-navbar {
-        max-width: 100px;
+        min-width: 100px;
         height: auto;
     }
 
     .navbar {
-        font-size: 20px;
         flex-basis: 10px;
+        font-size: 30px;
+    }
+
+    .btn{
         font-size: 30px;
     }
 
@@ -235,6 +246,92 @@ br{
         justify-content: center;
         align-content: center;
         flex-direction: column;
+    }
+
+    .firstPage {
+        padding-top: 30%;
+        padding-bottom: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-pic {
+        min-width: 80%;
+        height: auto;
+    }
+
+    .about-pic {
+        min-width: 50%;
+        height: auto;
+    }
+
+    .about-items{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .about-me{
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 3px;
+        line-height: 60px;
+    }
+    
+    .services-grid{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 30px;
+    }
+    
+    .services-grid>div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 3px;
+        line-height: 60px;
+    }
+    
+    .services-grid p{
+        width: 80%;
+    }
+    
+    .services-img{
+        width: 50%;
+        height: auto;
+    }
+    
+    .api-img-service{
+        order: 0;
+    }
+
+    .feedback-img{
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+    }
+
+    .contact-flex{
+        margin-top: 60px;
+        width: 80vw;
+        display: grid;
+        grid-template-rows: 1fr 0.1fr 2fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .contact-splitter{
+        border-top: 2px solid antiquewhite;
+        border-left: none;
+        opacity: 0.6;
     }
 }
 
