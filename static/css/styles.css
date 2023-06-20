@@ -8,7 +8,40 @@ body {
 h1 {
     font-size: 50px;
     font-family: 'Roboto Slab', serif;
+    display: inline-block;
+    color: #0dcaf0;
 }
+
+.animated { 
+    /* background-image: url(/css/images/logo.png);  */
+    background-repeat: no-repeat;
+    /* background-position: left top; 
+    padding-top:95px;
+    margin-bottom:60px; */
+    /* -webkit-animation-duration: 1s;
+    animation-duration: 1s;  */
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+ }
+ 
+ @-webkit-keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+    40% {-webkit-transform: translateY(-30px);} 
+    60% {-webkit-transform: translateY(-15px);} 
+ } 
+ 
+ @keyframes bounce { 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ }
+ 
+ .bounce { 
+    -webkit-animation: bounce 5s ease infinite both;
+    animation: bounce 5s ease infinite both;
+    /* -webkit-animation-name: bounce; 
+    animation-name: bounce;  */
+ }
 
 p {
     margin: 15px 0px 15px 0px;
@@ -49,7 +82,7 @@ p {
 
 
 .fixed-top{
-    margin: 0px 90px 30px 90px;
+    padding: 0px 90px 0px 90px;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px);
     /* padding-top: 30px; */
@@ -63,8 +96,6 @@ p {
 .bg-trasparent,
 .container-fluid {
     /* background-color: #28282B; */
-    padding-left: 0%;
-    padding-right: 0%;
     /* background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(5px); */
 }
@@ -210,7 +241,7 @@ br{
     }
 
     .fixed-top{
-        margin: 0px 30px 30px 30px;
+        padding: 0px 30px 0px 30px;
     }
 
 
@@ -365,6 +396,11 @@ br{
     .navbar-toggler-icon{
         width: 60px;
         height: 60px;
+    }
+    
+    .footer-class>a{
+        width: 5vw;
+        display: flex;
     }
 }
 
