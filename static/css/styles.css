@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    background-color: #2e3647;
+    background-color: #28282B;
     color: antiquewhite;
 }
 
@@ -22,7 +22,7 @@ p {
 }
 
 .footer-class>a{
-    width: 5vw;
+    width: 3vw;
     display: flex;
 }
 /* Classes css */
@@ -40,16 +40,19 @@ p {
 }
 
 .page-splitter {
-    background-color: #2e3647;
+    background-color: #28282B;
     border-top: antiquewhite 7px dotted;
     height: 0px;
     width: 15%;
     margin: auto;
 }
 
+
 .fixed-top{
     margin: 0px 90px 30px 90px;
-    padding-top: 30px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    /* padding-top: 30px; */
 }
 
 .logo-navbar {
@@ -59,9 +62,11 @@ p {
 
 .bg-trasparent,
 .container-fluid {
-    background-color: #2e3647;
+    /* background-color: #28282B; */
     padding-left: 0%;
     padding-right: 0%;
+    /* background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px); */
 }
 
 .firstPage {
@@ -119,6 +124,7 @@ br{
 .hero-pic {
     max-width: 70%;
     height: auto;
+    border-radius: 10%;
 }
 
 .right {
@@ -185,7 +191,7 @@ br{
 }
 
 .footer-link{
-    width: 10vw;
+    width: 5vw;
 }
 
 @media (max-width: 1000px) {
@@ -201,6 +207,10 @@ br{
     h1 {
         font-size: 80px;
         font-family: 'Roboto Slab', serif;
+    }
+
+    .fixed-top{
+        margin: 0px 30px 30px 30px;
     }
 
 
