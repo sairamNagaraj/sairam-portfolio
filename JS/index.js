@@ -13,6 +13,7 @@ function changeTheme(){
         document.querySelector("#cssStyle").setAttribute("href", "static/css/styles_light.css");
         document.querySelector("#feedback1").setAttribute("src", "static/images/Feedback/Feedback1_lightmode.png");
         document.querySelector("#feedback2").setAttribute("src", "static/images/Feedback/Feedback2_lightmode.png");
+        document.querySelector("#carouselExampleIndicators").classList.add("carousel-dark");
         document.querySelectorAll(".dark-light-mode-img").forEach(imgTag => {
             imgTag.setAttribute("src","static/images/General/darkMode.png")
         })
@@ -20,6 +21,7 @@ function changeTheme(){
         document.querySelector("#cssStyle").setAttribute("href", "static/css/styles_dark.css");
         document.querySelector("#feedback1").setAttribute("src", "static/images/Feedback/Feedback1.png");
         document.querySelector("#feedback2").setAttribute("src", "static/images/Feedback/Feedback2.png");
+        document.querySelector("#carouselExampleIndicators").classList.remove("carousel-dark");
         document.querySelectorAll(".dark-light-mode-img").forEach(imgTag => {
             imgTag.setAttribute("src","static/images/General/lightMode.png")
         })

@@ -15,9 +15,23 @@ h1 {
     color: #0dcaf0;
 }
 
+em{
+    font-weight: 700;
+}
+
 .greeting{
     font-family: 'Roboto Slab', serif;
     color: #0dcaf0;
+}
+
+#dark-light-mode-2{
+    margin: 0px 0px 0px 10px;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+    text-decoration: underline;
+    background-color: #28282B;
+    color: antiquewhite;
 }
 
 .animated {
@@ -220,7 +234,7 @@ br {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+    gap: 60px;
 }
 
 .services-grid>div {
@@ -240,8 +254,10 @@ br {
 }
 
 .services-img {
-    width: 50%;
+    width: 70%;
     height: auto;
+    border-radius: 10%;
+    border: 3px inset rgba(255, 255, 255, .50);
 }
 
 .api-img-service {
@@ -403,8 +419,9 @@ br {
     }
 
     .services-img {
-        width: 50%;
-        height: auto;
+        width: 100%;
+        height: 60%;
+        border-radius: 5%;
     }
 
     .api-img-service {
