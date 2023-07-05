@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="static/css/styles.css" />
+    <link id="cssStyle" rel="stylesheet" href="static/css/styles_dark.css" />
     <link rel="icon" type="image/svg+xml" href="static/images/General/SairamLogo3.svg">
 </head>
 
@@ -22,12 +22,16 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#home"><img class="logo-navbar" src="static/images/General/SairamLogo3.svg"
                     alt="SairamLogo"></a>
+            <a class="navbar-custom-darkmode" id="dark-light-mode" href="#"><img class="logo-navbar dark-light-mode-img" src="static/images/General/lightMode.png"
+                        alt="darkMode"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a id="dark-light-mode-2" class="navbar-custom-darkmode-2 ms-auto me-2 mb-0 mb-lg-0" href="#"><img class="logo-navbar dark-light-mode-img" src="static/images/General/lightMode.png"
+                    alt="darkMode"></a>
                 <ul class="navbar-nav ms-auto me-2 mb-0 mb-lg-0 navbar-nav-scroll">
                     <li class="nav-item me-2 mobile-margin">
                         <a class="nav-link" href="#about"><span>About</span></a>
@@ -42,7 +46,7 @@
                         <a class="nav-link" href="#contact"><span>Contact</span></a>
                     </li>
                 </ul>
-                <form class="d-flex mobile-margin">
+                <form class="d-flex mobile-margin" action="mailto:bhagatsai92@gmail.com"  method="get" enctype="text/plain">
                     <input class="form-control me-3" type="email" placeholder="Email address" aria-label="Search">
                     <button class="btn btn-success" type="submit">Notify</button>
                 </form>
@@ -50,26 +54,31 @@
         </div>
     </nav>
     <footer class="footer-class">
-        <a class="footer-link" href="mailto:bhagatsai92@gmail.com" target="_blank"><img class="media-icons" src="static/images/icons/Mail.svg"
-                alt="Mail" /></a>
-        <a class="footer-link" href="https://wa.me/+918754572955?text=Hi%20there!" target="_blank"><img class="media-icons" src="static/images/icons/Whatsapp.svg" alt="Whatsapp" /></a>
-        <a class="footer-link" href="https://www.linkedin.com/in/sairam-nagaraj/" target="_blank"><img class="media-icons"
-                src="static/images/icons/Linkedin.svg" alt="Linkedin" /></a>
+        <a class="footer-link" href="mailto:bhagatsai92@gmail.com" target="_blank"><img class="media-icons"
+                src="static/images/icons/Mail.svg" alt="Mail" /></a>
+        <a class="footer-link" href="https://wa.me/+918754572955?text=Hi%20there!" target="_blank"><img
+                class="media-icons" src="static/images/icons/Whatsapp.svg" alt="Whatsapp" /></a>
+        <a class="footer-link" href="https://www.linkedin.com/in/sairam-nagaraj/" target="_blank"><img
+                class="media-icons" src="static/images/icons/Linkedin.svg" alt="Linkedin" /></a>
     </footer>
     <div class="body-data">
-        <div class="firstPage" id="home">
-            <div class="flex-container">
-                <div class="flex-item right">
-                    <img class="hero-pic" src="static/images/General/DP3.png" alt="SairamImage">
-                </div>
-                <div class="flex-item left">
-                    <h5>Hi! I am <span><h1 class = "animated bounce">Sairam Nagaraj</h1></span></h5>
-                    <p>I am dedicated to create dynamic and engaging web applications</p>
-                    <hr>
-                    <span class="btn btn-outline-info skill">Webflow</span>
-                    <span class="btn btn-outline-info skill">React</span>
-                    <span class="btn btn-outline-info skill">Java</span>
-                    <span class="btn btn-outline-info skill">Spring boot</span>
+        <div class="firstPageBackground">
+            <div class="firstPage" id="home">
+                <div class="flex-container">
+                    <div class="flex-item right">
+                        <img class="hero-pic" src="static/images/General/dp3_N.png" alt="SairamImage">
+                    </div>
+                    <div class="flex-item left">
+                        <h5>Hi <span id="greeting" class="greeting"></span>! I am <span>
+                                <h1 class="animated bounce">Sairam Nagaraj</h1>
+                            </span></h5>
+                        <p>I am dedicated to create dynamic and engaging web applications</p>
+                        <hr>
+                        <span class="btn btn-outline-info skill">Webflow</span>
+                        <span class="btn btn-outline-info skill">React</span>
+                        <span class="btn btn-outline-info skill">Java</span>
+                        <span class="btn btn-outline-info skill">Spring boot</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -135,10 +144,10 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="static/images/Feedback/Feedback1.png" class="d-block w-100" alt="Feedback1">
+                        <img id="feedback1" src="static/images/Feedback/Feedback1.png" class="d-block w-100" alt="Feedback1">
                     </div>
                     <div class="carousel-item">
-                        <img src="static/images/Feedback/Feedback2.png" class="d-block w-100" alt="Feedback2">
+                        <img id="feedback2" src="static/images/Feedback/Feedback2.png" class="d-block w-100" alt="Feedback2">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -205,6 +214,7 @@
             </div>
         </div>
     </div>
+    <script src="JS/index.js"></script>
 </body>
 
 </html>
