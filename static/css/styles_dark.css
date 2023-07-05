@@ -118,7 +118,7 @@ p {
 }
 
 .page-splitter {
-    background-color: #28282B;
+    background-color: #28282b;
     border-top: antiquewhite 7px dotted;
     height: 0px;
     width: 15%;
@@ -128,7 +128,7 @@ p {
 
 .fixed-top {
     padding: 0px 90px 0px 90px;
-    background-color: rgba(255, 255, 255, .15);
+    background-color: rgba(0, 0, 0, .15);
     backdrop-filter: blur(5px);
     /* padding-top: 30px; */
 }
@@ -462,6 +462,12 @@ br {
     .navbar-custom-darkmode-2 {
         margin: auto;
         visibility: hidden;
+    }
+    .fixed-top {
+        padding: 0px 90px 0px 90px;
+        background-color: rgba(0, 0, 0, .15);
+        backdrop-filter: blur(5px);
+        /* padding-top: 30px; */
     }
 }
 
