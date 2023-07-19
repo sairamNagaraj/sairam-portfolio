@@ -13,14 +13,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <link id="cssStyle" rel="stylesheet" href="static/css/styles_dark.css" />
-    <link rel="icon" type="image/svg+xml" href="static/images/General/SairamLogo3.svg">
+    <link id="cssMode" rel="stylesheet" href="static/css/mode_dark.css" />
+    <link id="cssStyle" rel="stylesheet" href="static/css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="static/images/General/SairamLogo4.png">
 </head>
 
 <body>
     <nav class="fixed-top navbar navbar-expand-lg navbar-dark bg-trasparent">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#home"><img class="logo-navbar" src="static/images/General/SairamLogo3.svg"
+            <a class="navbar-brand" href="#home"><img class="logo-navbar" src="static/images/General/SairamLogo4.png"
                     alt="SairamLogo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -41,13 +42,12 @@
                     <li class="nav-item me-2 mobile-margin">
                         <a class="nav-link" href="#contact"><span>Contact</span></a>
                     </li>
+                    <li class="nav-item me-2 mobile-margin">
+                        <a id="dark-light-mode-2" class="navbar-custom-darkmode-2 ms-auto me-2 mb-0 mb-lg-0" href="#"><img class="dark-light-mode-img" src="static/images/General/lightMode.png"
+                            alt="darkMode"></a>
+                    </li>
+                    
                 </ul>
-                <form class="d-flex mobile-margin" action="mailto:bhagatsai92@gmail.com"  method="get" enctype="text/plain">
-                    <input class="form-control me-3" type="email" placeholder="Email address" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Notify</button>
-                </form>
-                <a id="dark-light-mode-2" class="navbar-custom-darkmode-2 ms-auto me-2 mb-0 mb-lg-0" href="#"><img class="logo-navbar dark-light-mode-img" src="static/images/General/lightMode.png"
-                    alt="darkMode"></a>
             </div>
         </div>
     </nav>
@@ -66,12 +66,12 @@
             <div class="firstPage" id="home">
                 <div class="flex-container">
                     <div class="flex-item right">
-                        <img class="hero-pic" src="static/images/General/dp3_N.png" alt="SairamImage">
+                        <img class="hero-pic" src="static/images/General/DP3_New.png" alt="SairamImage">
                     </div>
                     <div class="flex-item left">
-                        <h5>Hi <span id="greeting" class="greeting"></span>! I am <span>
+                        <P>Hi <span id="greeting" class="greeting"></span>! I am <span>
                                 <h1 class="animated bounce">Sairam Nagaraj</h1>
-                            </span></h5>
+                            </span></P>
                         <p>I am dedicated to create dynamic and engaging web applications</p>
                         <hr>
                         <span class="btn btn-outline-info skill">Webflow</span>
@@ -174,27 +174,30 @@
                 </div>
                 <div class="contact-splitter"></div>
                 <div class="contact-form">
-                    <form action="mailto:bhagatsai92@gmail.com" method="post">
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="988df1c8-2c40-4cbd-be18-c67ec87cfa52"/>
+                        <input type="hidden" name="subject" value="New Submission on Portfolio"/>
+                        <input type="hidden" name="from_name" value="Portfolio Contact Request"/>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+                            <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Enter Name">
                         </div>
                         <br />
                         <div class="form-group">
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                            <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp"
                                 placeholder="Enter email">
                             <small id="text" class="form-text text-muted">We'll never share your email with anyone
                                 else.</small>
                         </div>
                         <br />
                         <div class="form-group">
-                            <input type="text" class="form-control" id="inputPhone" aria-describedby="emailHelp"
+                            <input type="text" class="form-control" id="inputPhone" name="inputPhone" aria-describedby="emailHelp"
                                 placeholder="Enter Phone number">
                         </div>
                         <br />
                         <span>Preferred Communication</span>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="comm-pref" id="email-pref"
-                                value="option1">
+                                value="Email">
                             <label class="form-check-label" for="email-pref">
                                 Email
                             </label>
@@ -202,7 +205,7 @@
                         <br />
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="comm-pref" id="whatsapp-pref"
-                                value="option2" checked>
+                                value="Whatsapp" checked>
                             <label class="form-check-label" for="whatsapp-pref">
                                 Whatsapp
                             </label>

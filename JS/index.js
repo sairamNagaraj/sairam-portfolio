@@ -7,10 +7,10 @@ document.querySelector("#dark-light-mode").addEventListener("click",function(){c
 document.querySelector("#dark-light-mode-2").addEventListener("click",function(){changeTheme();});
 
 function changeTheme(){
-    var currentTheme = document.querySelector("#cssStyle").getAttribute("href");
+    var currentTheme = document.querySelector("#cssMode").getAttribute("href");
     console.log(currentTheme);
     if(currentTheme.includes("dark")){
-        document.querySelector("#cssStyle").setAttribute("href", "static/css/styles_light.css");
+        document.querySelector("#cssMode").setAttribute("href", "static/css/mode_light.css");
         document.querySelector("#feedback1").setAttribute("src", "static/images/Feedback/Feedback1_lightmode.png");
         document.querySelector("#feedback2").setAttribute("src", "static/images/Feedback/Feedback2_lightmode.png");
         document.querySelector("#carouselExampleIndicators").classList.add("carousel-dark");
@@ -18,7 +18,7 @@ function changeTheme(){
             imgTag.setAttribute("src","static/images/General/darkMode.png")
         })
     }else{
-        document.querySelector("#cssStyle").setAttribute("href", "static/css/styles_dark.css");
+        document.querySelector("#cssMode").setAttribute("href", "static/css/mode_dark.css");
         document.querySelector("#feedback1").setAttribute("src", "static/images/Feedback/Feedback1.png");
         document.querySelector("#feedback2").setAttribute("src", "static/images/Feedback/Feedback2.png");
         document.querySelector("#carouselExampleIndicators").classList.remove("carousel-dark");

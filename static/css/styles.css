@@ -1,15 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    background-color: #28282B;
-    color: antiquewhite;
+    font-size: 1.3vw;
     background-image: url('../images/General/wave.svg');
     background-repeat: no-repeat;
     background-position-y: bottom;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 3.5vw;
     font-family: 'Roboto Slab', serif;
     display: inline-block;
     color: #0dcaf0;
@@ -24,20 +22,8 @@ h1 {
     margin: 0px 0px 0px 10px;
 }
 
-.navbar-nav .nav-item .nav-link:focus {
-    text-decoration: underline;
-    background-color: antiquewhite;
-    color: #28282B;
-}
-
 .animated {
-    /* background-image: url(/css/images/logo.png);  */
     background-repeat: no-repeat;
-    /* background-position: left top; 
-    padding-top:95px;
-    margin-bottom:60px; */
-    /* -webkit-animation-duration: 1s;
-    animation-duration: 1s;  */
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
@@ -83,8 +69,6 @@ h1 {
 .bounce {
     -webkit-animation: bounce 5s ease-in-out infinite both;
     animation: bounce 5s ease-in-out infinite both;
-    /* -webkit-animation-name: bounce; 
-    animation-name: bounce;  */
 }
 
 .navbar-custom-darkmode {
@@ -100,7 +84,6 @@ h1 {
 p {
     margin: 15px 0px 15px 0px;
     opacity: 0.6;
-    font-weight: 400;
 }
 
 .footer-class {
@@ -128,9 +111,6 @@ p {
 }
 
 .page-splitter {
-    background-color: #28282b;
-    border-top: antiquewhite 7px dotted;
-    height: 0px;
     width: 15%;
     margin: 10px auto 0 auto;
 }
@@ -138,21 +118,16 @@ p {
 
 .fixed-top {
     padding: 0px 90px 0px 90px;
-    background-color: rgba(0, 0, 0, .15);
-    backdrop-filter: blur(5px);
-    /* padding-top: 30px; */
 }
 
-.logo-navbar {
-    max-width: 50px;
+.dark-light-mode-img{
+    max-width: 3.4vw;
     height: auto;
 }
 
-.bg-trasparent,
-.container-fluid {
-    /* background-color: #28282B; */
-    /* background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px); */
+.logo-navbar {
+    max-width: 70px;
+    height: auto;
 }
 
 .firstPage {
@@ -162,9 +137,9 @@ p {
 }
 
 .flex-container {
-    margin-top: 30px;
+    margin-top: 1vh;
     display: flex;
-    gap: 10px;
+    gap: 2vw;
     align-content: center;
     align-items: center;
 }
@@ -182,7 +157,7 @@ p {
 }
 
 .about-items {
-    margin-top: 60px;
+    margin-top: 1vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,14 +165,13 @@ p {
 }
 
 br {
-    line-height: 60px;
+    line-height: 30px;
 }
 
 .about-me {
     text-align: center;
-    font-size: 15px;
-    letter-spacing: 3px;
-    line-height: 30px;
+    letter-spacing: 0.1vw;
+    line-height: 6vh;
 }
 
 .flex-item {
@@ -206,14 +180,13 @@ br {
 }
 
 .about-pic {
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
 }
 
 .hero-pic {
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
-    border-radius: 10%;
 }
 
 .right {
@@ -230,7 +203,7 @@ br {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 60px;
+    gap: 2vw;
 }
 
 .services-grid>div {
@@ -240,9 +213,8 @@ br {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 15px;
-    letter-spacing: 3px;
-    line-height: 30px;
+    letter-spacing: 0.1vw;
+    line-height: 6vh;
 }
 
 .services-grid p {
@@ -260,7 +232,7 @@ br {
 }
 
 .feedback-img {
-    width: 50%;
+    width: 60%;
     height: auto;
     margin-top: 60px;
 }
@@ -284,20 +256,20 @@ br {
     width: 5vw;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
 
     body {
-        font-size: 30px;
+        font-size: 3vw;
     }
 
     h3,
     h5,
     h4 {
-        font-size: 50px;
+        font-size: 3vw;
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 4vw;
         font-family: 'Roboto Slab', serif;
     }
 
@@ -307,7 +279,6 @@ br {
 
 
     .flex-container {
-        margin-top: 10px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -319,6 +290,7 @@ br {
         order: 1;
         align-items: center;
         align-content: center;
+        margin: 30px 90px 30px 90px;
     }
 
     .right {
@@ -337,18 +309,18 @@ br {
 
     .navbar {
         flex-basis: 30px;
-        font-size: 30px;
+        font-size: 3vw;
     }
 
     .btn {
-        font-size: 30px;
+        font-size: 3vw;
     }
 
     .skill {
         width: 20vw;
         height: 70px;
-        margin-right: 20px;
-        font-size: 30px;
+        margin: 30px 90px 30px 90px;
+        font-size: 3vw;
         color: antiquewhite;
         opacity: 0.6;
         display: inline-flex;
@@ -358,14 +330,14 @@ br {
     }
 
     .firstPage {
-        padding-top: 30%;
-        padding-bottom: 30%;
+        padding-top: 20%;
+        padding-bottom: 20%;
         display: flex;
         justify-content: center;
     }
 
     .hero-pic {
-        min-width: 80%;
+        min-width: 40%;
         height: auto;
     }
 
@@ -384,7 +356,6 @@ br {
 
     .about-me {
         text-align: center;
-        font-size: 30px;
         letter-spacing: 3px;
         line-height: 60px;
     }
@@ -404,7 +375,6 @@ br {
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 30px;
         letter-spacing: 3px;
         line-height: 60px;
     }
@@ -482,5 +452,3 @@ br {
         /* padding-top: 30px; */
     }
 }
-
-/* id css */

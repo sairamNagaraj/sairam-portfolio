@@ -1,0 +1,14 @@
+body {
+    background-color: ghostwhite;
+    color: #28282B;
+}
+
+.page-splitter {
+    background-color: ghostwhite;
+    border-top: #28282B 7px dotted;
+}
+
+.fixed-top {
+    background-color: rgba(0, 0, 0, .75);
+    backdrop-filter: blur(5px);
+}
