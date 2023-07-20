@@ -13,12 +13,12 @@ h1 {
     color: #0dcaf0;
 }
 
-.greeting{
+.greeting {
     font-family: 'Roboto Slab', serif;
     color: #0dcaf0;
 }
 
-#dark-light-mode-2{
+#dark-light-mode-2 {
     margin: 0px 0px 0px 10px;
 }
 
@@ -120,7 +120,7 @@ p {
     padding: 0px 90px 0px 90px;
 }
 
-.dark-light-mode-img{
+.dark-light-mode-img {
     max-width: 3.4vw;
     height: auto;
 }
@@ -262,30 +262,31 @@ br {
         font-size: 3vw;
     }
 
-    h3,
+    .body-data {
+        margin: 30px 90px 30px 90px;
+    }
+
+    h3{
+        font-size: 5vw;
+    }
+
     h5,
     h4 {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     h1 {
-        font-size: 4vw;
+        font-size: 6vw;
         font-family: 'Roboto Slab', serif;
-    }
-
-    .fixed-top {
-        padding: 0px 30px 0px 30px;
     }
 
 
     .flex-container {
         display: flex;
         flex-direction: column;
-        gap: 10px;
     }
 
     .left {
-        padding-top: 10%;
         text-align: center;
         order: 1;
         align-items: center;
@@ -299,7 +300,7 @@ br {
     }
 
     .flex-item {
-        width: 100vw;
+        width: auto;
     }
 
     .logo-navbar {
@@ -319,7 +320,6 @@ br {
     .skill {
         width: 20vw;
         height: 70px;
-        margin: 30px 90px 30px 90px;
         font-size: 3vw;
         color: antiquewhite;
         opacity: 0.6;
@@ -327,11 +327,12 @@ br {
         justify-content: center;
         align-content: center;
         flex-direction: column;
+        margin: 2vw;
     }
 
     .firstPage {
         padding-top: 20%;
-        padding-bottom: 20%;
+        padding-bottom: 10%;
         display: flex;
         justify-content: center;
     }
@@ -365,7 +366,7 @@ br {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        gap: 30px;
+        grid-area: auto;
     }
 
     .services-grid>div {
@@ -385,7 +386,7 @@ br {
 
     .services-img {
         width: 100%;
-        height: 60%;
+        height: 100%;
         border-radius: 5%;
     }
 
@@ -445,10 +446,9 @@ br {
         margin: auto;
         visibility: hidden;
     }
+
     .fixed-top {
         padding: 0px 90px 0px 90px;
-        background-color: rgba(0, 0, 0, .15);
-        backdrop-filter: blur(5px);
         /* padding-top: 30px; */
     }
 }
