@@ -14,7 +14,7 @@ function changeTheme(){
         document.querySelector("#feedback1").setAttribute("src", "static/images/Feedback/Feedback1_lightmode.png");
         document.querySelector("#feedback2").setAttribute("src", "static/images/Feedback/Feedback2_lightmode.png");
         document.querySelector("#carouselExampleIndicators").classList.add("carousel-dark");
-        document.querySelectorAll(".dark-light-mode-img").forEach(imgTag => {
+        document.querySelectorAll(".dark-mode-ref").forEach(imgTag => {
             imgTag.setAttribute("src","static/images/General/darkMode.png")
         })
     }else{
@@ -22,7 +22,7 @@ function changeTheme(){
         document.querySelector("#feedback1").setAttribute("src", "static/images/Feedback/Feedback1.png");
         document.querySelector("#feedback2").setAttribute("src", "static/images/Feedback/Feedback2.png");
         document.querySelector("#carouselExampleIndicators").classList.remove("carousel-dark");
-        document.querySelectorAll(".dark-light-mode-img").forEach(imgTag => {
+        document.querySelectorAll(".dark-mode-ref").forEach(imgTag => {
             imgTag.setAttribute("src","static/images/General/lightMode.png")
         })
     }

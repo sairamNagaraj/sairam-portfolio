@@ -446,9 +446,4 @@ br {
         margin: auto;
         visibility: hidden;
     }
-
-    .fixed-top {
-        padding: 0px 90px 0px 90px;
-        /* padding-top: 30px; */
-    }
 }
